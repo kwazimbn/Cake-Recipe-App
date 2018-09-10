@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecipeList">
+
+    <RelativeLayout
+        android:id="@+id/lytRecipeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/txtTitleH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Recipe List"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/recipeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="Your recipe details shows here"
+            android:textSize="20sp"
+            android:layout_marginTop="83dp"
+            android:background="@color/White"
+            android:backgroundTint="@color/Linen"
+            android:tooltipText="Select Cake">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/txtRecipeList"
+            android:layout_width="match_parent"
+            android:layout_height="338dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="133dp"
+            android:background="@android:color/background_light"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Your recipe details shows here"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>
