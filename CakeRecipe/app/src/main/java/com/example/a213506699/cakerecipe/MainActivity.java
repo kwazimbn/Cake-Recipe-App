@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnAddRecipe = findViewById(R.id.btnAddRecipe);
         btnRecipeList = findViewById(R.id.btnRecipeList);
+        /*
+        Calling the Add Recipe activity
+        */
         btnAddRecipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        /*
+        Calling the Recipe List activity
+        */
         btnRecipeList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+    /*
+    Setting the background color of the current activity
+    */
         View someView = findViewById(R.id.mainRelative);
         // Find the root view
         View root = someView.getRootView();
