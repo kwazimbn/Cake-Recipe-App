@@ -1,7 +1,5 @@
 package com.example.a213506699.cakerecipe;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
 import java.util.ArrayList;
 
 public class Cake {
@@ -40,7 +38,7 @@ public class Cake {
          String s ="";
          for(int i=0; i<recipe.length;i++)
          {
-             s+=recipe[i]+"\n";
+             s+=recipe[i].trim()+"\n";
          }
          return  s;
     }
